@@ -50,7 +50,7 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "nome do projeto",
+      title: "Mata mosquito - jogo ",
       description: "Jogo clássico de matar moscas, com três níveis de dificuldade: fácil, médio e difícil. O jogador possui três vidas e deve eliminar o máximo de moscas possível até a finalização do tempo no cronometro, evitando perder suas vidas.",
       image: mosca,
       link: "https://github.com/Julianafrego/game-mata-mosquito"
