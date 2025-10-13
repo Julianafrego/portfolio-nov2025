@@ -64,7 +64,7 @@ const Projects = () => {
     {
       id: 8,
       title: "BMMWEB",
-      description: "Site desenvolvido para permitir criação e comparação de modelos de negócios de forma simplificada e intuitiva, através da seleção de padrões predefinidos. A ferramenta está disponível atualmente em inglês e português, e em breve uma versão atualizada será disponibilizada a todos.",
+      description: "Site desenvolvido para permitir criação e comparação de modelos de negócios de forma simplificada e intuitiva, através da seleção de padrões predefinidos. A ferramenta terá versão atualizada disponível em breve, nos idiomas português-br e inglês.",
       image: bmm
     },
 
