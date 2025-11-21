@@ -1,0 +1,62 @@
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-soft-gradient {
+  background: linear-gradient(135deg, #F7F5FF, #FFF5FA, #ECE7FF);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gradiente suave (aurora) — usamos também Framer Motion para blobs */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-aurora {
+  background: linear-gradient(135deg, #F7F5FF 0%, #FFE7F7 45%, #B8B3FF 100%);
+  background-size: 300% 300%;
+  animation: gradientShift 18s ease infinite;
+}
+
+/* Subtle glass / backdrop for cards */
+.glass {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* soft shadows and rounded big */
+.card-hero {
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(99, 75, 200, 0.08);
+}
+
+/* small utility for soft border colored */
+.border-soft {
+  border: 1px solid rgba(167,139,250,0.12);
+}
+
+
+
+
+@keyframes float1 {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(50px, -30px); }
+  100% { transform: translate(0,0); }
+}
+
+@keyframes float2 {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(-40px, 30px); }
+  100% { transform: translate(0,0); }
+}

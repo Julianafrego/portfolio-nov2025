@@ -9,8 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App bg-black">
-
+    <div className="App bg-[#EADFFF] ">
 
       <Header />
       <About />
