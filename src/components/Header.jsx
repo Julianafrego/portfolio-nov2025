@@ -21,11 +21,11 @@ const Header = () => {
         >
           <h1 className="text-4xl lg:text-5xl font-extrabold text-[#3F3A75] leading-tight mb-4">
             Olá, eu sou <span className="text-[#6D5DD8]">Juliana</span><br/>
-            Desenvolvedora Fullstack & Designer de Interfaces
+            Desenvolvedora Fullstack
           </h1>
 
           <p className="text-[#5F5577] max-w-2xl mb-6">
-            Crio aplicações web funcionais e interfaces com foco em usabilidade e estética. Trabalho com React, FastAPI e design de produtos.
+            Crio aplicações web funcionais e interfaces com foco em usabilidade e estética. 
           </p>
 
           <div className="flex gap-4 flex-wrap">
