@@ -1,64 +1,60 @@
 import React from 'react';
-import Galaxy from './style/Galaxy';
+import SoftAurora from '../components/style/aurora';
+import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button.jsx';
-import fotoProfile from '../assets/foto_profile.jpg';
 
 const Header = () => {
   return (
-    <header className="relative min-h-screen overflow-hidden">
-      
-      {/* Galaxy como background */}
-      <div className="absolute inset-0 z-0">
-        <Galaxy 
-          mouseRepulsion={true}
-          mouseInteraction={true}
-          density={1.5}
-          glowIntensity={0.2}
-          saturation={0.5}
-          hueShift={240}
-          starSpeed={0.05}
-        />
-      </div>
+    <header className="relative min-h-[80vh] bg-aurora overflow-hidden">
+      <SoftAurora />
+      <nav className="relative z-20 container mx-auto px-6 py-6 flex items-center justify-between">
+        <div className="text-2xl font-bold text-[#3F3A75]">Juliana Freire</div>
+      </nav>
 
-      {/* Conteúdo principal */}
-      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center lg:justify-between relative z-10 min-h-screen">
-
-        {/* Right side - Profile image */}
-        <div className="lg:w-1/2 flex justify-center mb-6 lg:mb-0">
-          <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-lg overflow-hidden shadow-lg">
-            <img 
-              src={fotoProfile} 
-              alt="Juliana Freire" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-
-        {/* Left side - Text content */}
-        <div className="text-center lg:text-left lg:w-1/2 space-y-4">
-          <h1 className="text-4xl lg:text-5xl font-bold text-purple-600 mb-2">
-            Juliana Freire G.
+      <div className="container mx-auto mt-6 px-6 relative z-20 flex flex-col lg:flex-row items-center gap-10 py-12">
+        {/* Left: Text */}
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="lg:w-1/2"
+        >
+          <h1 className="text-4xl lg:text-5xl font-extrabold text-[#3F3A75] leading-tight mb-4">
+            Olá, eu sou <span className="text-[#6D5DD8]">Juliana</span><br/>
+            Desenvolvedora Fullstack & Designer de Interfaces
           </h1>
-          <p className="text-xl lg:text-2xl text-gray-300 mb-6 lg:mb-8">
-           Desenvolvedora Fullstack
+
+          <p className="text-[#5F5577] max-w-2xl mb-6">
+            Crio aplicações web funcionais e interfaces com foco em usabilidade e estética. Trabalho com React, FastAPI e design de produtos.
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button 
-              className="bg-purple-600 hover:bg-purple-800 text-white text-xl px-8 py-5 rounded-full w-full sm:w-auto"
-              onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
+
+          <div className="flex gap-4 flex-wrap">
+            <Button
+              className="bg-[#A78BFA] hover:bg-[#7C3AED] text-white px-6 py-3 rounded-full"
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Ver Projetos
+            </Button>
+
+            <Button
+              variant="outline"
+              className="border-soft text-[#3F3A75] px-6 py-3 rounded-full"
+              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Sobre mim
             </Button>
-            <Button 
-              className="bg-purple-600 hover:bg-purple-800 text-white text-xl px-8 py-5 rounded-full w-full sm:w-auto"
-              onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
-            >
-              Meus projetos
-            </Button>
           </div>
-        </div>
+        </motion.div>
 
+        {/* Right: decorative image inside a blob-like card */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.98 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.9 }}
+          className="lg:w-1/2 flex justify-center"
+        >
+
+        </motion.div>
       </div>
     </header>
   );
