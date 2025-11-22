@@ -23,7 +23,7 @@ const Projects = () => {
     {
       id: 7,
       title: "Portfolio - LES",
-      description: "Site desenvolvido para o Laboratório de Engenharia de Software da UESPI - Campus Piripiri, que apresenta projetos, publicações, participantes e parceiros, destacando as atividades e conquistas do laboratório.",
+      description: "Site desenvolvido em equipe para o Laboratório de Engenharia de Software da UESPI – Campus Piripiri, apresentando projetos, publicações, participantes e parceiros, e destacando as atividades e conquistas do laboratório.",
       image: les,
     },
     {
