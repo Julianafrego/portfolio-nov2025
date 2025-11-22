@@ -17,7 +17,8 @@ const Projects = () => {
       id: 8,
       title: "BMMWEB",
       description: "Site desenvolvido para permitir criação e comparação de modelos de negócios de forma simplificada e intuitiva, através da seleção de padrões predefinidos. A ferramenta terá versão atualizada disponível em breve, nos idiomas português-br e inglês.",
-      image: bmm
+      image: bmm,
+      site: "https://bmm.prp.uespi.br/"
     },
     {
       id: 7,
@@ -30,35 +31,35 @@ const Projects = () => {
       title: "Voley app",
       description: "Aplicativo para acompanhar e contabilizar pontos realizados pelos times em uma partida de vôlei, permitindo registrar o placar em tempo real e facilitar o controle de forma simples e prática durante o jogo.",
       image: voley,
-      link: "https://github.com/Julianafrego/volley_app"
+      github: "https://github.com/Julianafrego/volley_app"
     },
     {
       id: 3,
       title: "BMI Calculator", 
       description: "Aplicativo para calcular o IMC e indicar se a pessoa está abaixo do peso, no peso ideal ou com sobrepeso. Para realizar a análise, o app solicita informações como sexo, idade, peso e altura, oferecendo um resultado claro e fácil de entender.",
       image: imc,
-      link: "https://github.com/Julianafrego/imc_app"
+      github: "https://github.com/Julianafrego/imc_app"
     },
     {
       id: 4,
       title: "Xitoque",
       description: "Aplicativo infantil com cores vibrantes e interface simples, que permite tocar dois instrumentos: um xilofone com 7 teclas, do dó ao si, e um mini teclado com 12 teclas, proporcionando diversão e aprendizado musical.",
       image: xitoque,
-      link: "https://github.com/Julianafrego/xitoque_app"
+      github: "https://github.com/Julianafrego/xitoque_app"
     },
     {
       id: 5,
       title: "Jogo da velha",
       description: "O aplicativo consiste em um jogo simples de jogo da velha, Após a finalização de cada partida o aplicativo guarda a posicao de de X e O da partida no histórico, armazenando nesse os resultados de todas as partidas.",
       image: velha,
-      link: "https://github.com/Julianafrego/jogo_da_velha_flutter"
+      github: "https://github.com/Julianafrego/jogo_da_velha_flutter"
     },
        {
       id: 1,
       title: "Intelecto quiz",
       description: "Aplicativo de perguntas e respostas que abrange diversas áreas do conhecimento. O usuário pode explorar diferentes categorias, testar seus conhecimentos e se desafiar com perguntas para cada tema.",
       image: intelectoquiz,
-      link: "https://github.com/Julianafrego/intelecto_quiz",
+      github: "https://github.com/Julianafrego/intelecto_quiz",
       highlighted: true
     },
 
