@@ -11,7 +11,7 @@ const Header = () => {
         <div className="text-2xl font-bold text-[#3F3A75]">Juliana Freire</div>
       </nav>
 
-      <div className="container mx-auto mt-6 px-6 relative z-20 flex flex-col lg:flex-row items-center gap-10 py-12">
+      <div className="container mx-auto mt-30 px-6 relative z-20 flex flex-col lg:flex-row items-center gap-10 py-12">
         {/* Left: Text */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -25,7 +25,7 @@ const Header = () => {
           </h1>
 
           <p className="text-[#5F5577] max-w-2xl mb-6">
-            Crio aplicações web funcionais e interfaces com foco em usabilidade e estética. 
+            Crio aplicações funcionais e interfaces com foco em usabilidade e estética. 
           </p>
 
           <div className="flex gap-4 flex-wrap">
