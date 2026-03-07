@@ -2,26 +2,37 @@ import React from 'react';
 import {
   SiJavascript, SiTypescript, SiPython, SiDart,
   SiHtml5, SiCss3, SiTailwindcss, SiReact, SiFastapi,
-  SiPostgresql, SiMysql, SiGit, SiGithub, SiFigma, SiDocker
+  SiPostgresql, SiMysql, SiGit,SiFlutter, SiGithub, SiFigma, SiDocker, SiAngular, SiNodedotjs, SiSpringboot, SiSqlite
 } from 'react-icons/si';
+import { FaJava } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
 const techs = [
   { name: 'React', icon: SiReact },
   { name: 'JavaScript', icon: SiJavascript },
   { name: 'TypeScript', icon: SiTypescript },
-  { name: 'Python', icon: SiPython },
-  { name: 'Dart', icon: SiDart },
+  { name: 'Angular', icon: SiAngular },
   { name: 'HTML5', icon: SiHtml5 },
   { name: 'CSS3', icon: SiCss3 },
-  { name: 'Tailwind', icon: SiTailwindcss },
+  { name: 'Tailwind CSS', icon: SiTailwindcss },
+
+  { name: 'Python', icon: SiPython },
   { name: 'FastAPI', icon: SiFastapi },
-  { name: 'Postgres', icon: SiPostgresql },
+  { name: 'Node.js', icon: SiNodedotjs },
+  { name: 'Java', icon: FaJava },
+  { name: 'Spring Boot', icon: SiSpringboot },
+
+  { name: 'PostgreSQL', icon: SiPostgresql },
   { name: 'MySQL', icon: SiMysql },
+  { name: 'SQLite', icon: SiSqlite },
+
+  { name: 'Flutter', icon: SiFlutter },
+  { name: 'Dart', icon: SiDart },
+
   { name: 'Git', icon: SiGit },
   { name: 'GitHub', icon: SiGithub },
-  { name: 'Figma', icon: SiFigma },
   { name: 'Docker', icon: SiDocker },
+  { name: 'Figma', icon: SiFigma },
 ];
 
 const Technologies = () => {
