@@ -7,61 +7,76 @@ import voley from '../assets/volley.png';
 import imc from '../assets/imc.jpg';
 import xitoque from '../assets/xitoque.png';
 import velha from '../assets/velha.jpg';
-import mosca from '../assets/mosca.png';
+//import mosca from '../assets/mosca.png';
 import les from '../assets/les.png';
 import bmm from '../assets/bmm.png';
-
+import cafeconcentrado from '../assets/cafeconcentrado.jpeg';
 const Projects = () => {
   const projects = [
-        {
+      {
       id: 8,
       title: "BMMWEB",
-      description: "Site desenvolvido para permitir criação e comparação de modelos de negócios de forma simplificada e intuitiva, através da seleção de padrões predefinidos. A ferramenta terá versão atualizada disponível em breve, nos idiomas português-br e inglês.",
+      description: "Plataforma web voltada à criação e comparação de modelos de negócios, desenvolvida para tornar o processo de modelagem mais intuitivo e estruturado. Atuo há mais de um ano na continuidade e evolução do sistema, com participação full stack em frontend, backend, integrações, modelagem de banco de dados, criação de CRUDs, desenvolvimento de novas telas e deploy da aplicação.",
       image: bmm,
-      site: "https://bmm.prp.uespi.br/"
+      site: "https://bmm.prp.uespi.br/",
+      tags: ["React", "Node.js", "FastApi", "PostgreSQL", "Docker", "Figma"],
     },
     {
       id: 7,
       title: "Portfolio - LES",
-      description: "Site desenvolvido em equipe para o Laboratório de Engenharia de Software da UESPI – Campus Piripiri, apresentando projetos, publicações, participantes e parceiros, e destacando as atividades e conquistas do laboratório.",
+      description: "Site institucional desenvolvido para apresentar os projetos e resultados do Laboratório de Engenharia de Software da UESPI. Atuei na prototipação, construção das interfaces e integração frontend, transformando requisitos em telas funcionais e responsivas.",
       image: les,
+      tags: ["React", "Tailwind CSS", "figma", "TypeScript"],
     },
     {
-      id: 2,
-      title: "Voley app",
-      description: "Aplicativo para acompanhar e contabilizar pontos realizados pelos times em uma partida de vôlei, permitindo registrar o placar em tempo real e facilitar o controle de forma simples e prática durante o jogo.",
-      image: voley,
-      github: "https://github.com/Julianafrego/volley_app"
+      id: 6,
+      title: "Café Concentrado",
+      description: "Aplicação web inspirada na técnica Pomodoro, com temporizador configurável por sessões de foco e pausa, além de gerenciamento de tarefas. Desenvolvi o projeto de ponta a ponta, implementando frontend, backend, CRUDs e regras de funcionamento da aplicação.",
+      image: cafeconcentrado,
+      github: "https://github.com/Julianafrego/pomodoro-cafe-concentrado",
+      tags: ["Angular", "Spring Boot", "Tailwind CSS", "Java", "TypeScript"],
     },
     {
-      id: 3,
-      title: "BMI Calculator", 
-      description: "Aplicativo para calcular o IMC e indicar se a pessoa está abaixo do peso, no peso ideal ou com sobrepeso. Para realizar a análise, o app solicita informações como sexo, idade, peso e altura, oferecendo um resultado claro e fácil de entender.",
-      image: imc,
-      github: "https://github.com/Julianafrego/imc_app"
-    },
-    {
-      id: 4,
-      title: "Xitoque",
-      description: "Aplicativo infantil com cores vibrantes e interface simples, que permite tocar dois instrumentos: um xilofone com 7 teclas, do dó ao si, e um mini teclado com 12 teclas, proporcionando diversão e aprendizado musical.",
-      image: xitoque,
-      github: "https://github.com/Julianafrego/xitoque_app"
+      id: 1,
+      title: "Intelecto quiz",
+      description: "Aplicativo de perguntas e respostas com múltiplas categorias, desenvolvido com consumo de APIs externas para enriquecer a experiência do usuário. A aplicação integra uma API de frases para exibir conteúdos dinâmicos na tela inicial e outra para carregar perguntas e respostas dos quizzes, demonstrando integração com serviços externos e tratamento de dados no app.",
+      image: intelectoquiz,
+      github: "https://github.com/Julianafrego/intelecto_quiz",
+      highlighted: true,
+      tags: ["Flutter", "Dart", "API Integration"],
     },
     {
       id: 5,
       title: "Jogo da velha",
-      description: "O aplicativo consiste em um jogo simples de jogo da velha, Após a finalização de cada partida o aplicativo guarda a posicao de de X e O da partida no histórico, armazenando nesse os resultados de todas as partidas.",
+      description: "Aplicativo mobile do jogo da velha com armazenamento local do histórico das partidas. Além da lógica do jogo, implementei persistência em banco local para registrar resultados anteriores, vencedor de cada partida e posições finais associadas às vitórias.",
       image: velha,
-      github: "https://github.com/Julianafrego/jogo_da_velha_flutter"
+      github: "https://github.com/Julianafrego/jogo_da_velha_flutter",
+      tags: ["Flutter", "Dart", "Local Storage"],
     },
-       {
-      id: 1,
-      title: "Intelecto quiz",
-      description: "Aplicativo de perguntas e respostas que abrange diversas áreas do conhecimento. O usuário pode explorar diferentes categorias, testar seus conhecimentos e se desafiar com perguntas para cada tema.",
-      image: intelectoquiz,
-      github: "https://github.com/Julianafrego/intelecto_quiz",
-      highlighted: true
+    {
+      id: 4,
+      title: "Xitoque",
+      description: "Aplicativo infantil interativo voltado ao aprendizado musical, com interface colorida e acessível, permitindo a exploração de sons por meio de mini teclado virtual. O projeto foi desenvolvido com foco em experiência lúdica, organização visual e interação simples para o público infantil.",
+      image: xitoque,
+      github: "https://github.com/Julianafrego/xitoque_app",
+      tags: ["Flutter", "Dart"],
     },
+    {
+      id: 2,
+      title: "Voley app",
+      description: "Aplicativo mobile desenvolvido para registrar e acompanhar a pontuação de partidas de vôlei em tempo real, oferecendo uma solução simples e prática para controle do placar durante o jogo.",
+      image: voley,
+      github: "https://github.com/Julianafrego/volley_app",
+      tags: ["Flutter", "Dart"],
+    },
+    {
+      id: 3,
+      title: "BMI Calculator", 
+      description: "Aplicativo mobile para cálculo de IMC, desenvolvido para fornecer ao usuário uma análise simples e objetiva a partir de dados como idade, sexo, peso e altura. Implementei a lógica da aplicação, telas e a organização dos dados exibidos na interface.",
+      image: imc,
+      github: "https://github.com/Julianafrego/imc_app",
+      tags: ["Flutter", "Dart"],
+    }
 
   ];
 
@@ -70,21 +85,33 @@ const Projects = () => {
       <div className="absolute right-0 top-0 w-72 h-72 bg-[#A78BFA]/8 rounded-full blur-2xl"></div>
       <div className="container mx-auto px-6 relative z-10">
         <h2 className="text-3xl font-bold text-[#3F3A75] mb-8 text-center">Meus Projetos</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 gap-8 max-w-6xl mx-auto">
           {projects.map(project => (
             <motion.div
               key={project.id}
               whileHover={{ y: -6 }}
-              className="bg-white rounded-2xl shadow-lg p-6 border border-white/40"
+              className="bg-white rounded-2xl shadow-lg p-6 border border-white/40 flex flex-col h-full"
             >
-              <div className="h-56 w-full mb-4 overflow-hidden rounded-xl">
+              <div className="h-56 w-full mb-4 overflow-hidden rounded-xl ">
                 <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
               </div>
 
               <h3 className="text-2xl font-semibold text-[#6D5DD8] mb-2">{project.title}</h3>
               <p className="text-[#5F5577] mb-4">{project.description}</p>
 
-              <div className="flex gap-3 items-center">
+              {project.tags && (
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="px-3 py-1 text-sm rounded-full border border-[#D6CCFF] bg-[#F3EEFF] text-[#6D5DD8] font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+              <div className="flex gap-3 items-center mt-auto">
                 <Button
                   size="icon"
                   className={`w-10 h-10 rounded-xl transition-colors
@@ -101,7 +128,7 @@ const Projects = () => {
 
                 <Button
                   variant="outline"
-                  className="flex-1 border-[#A78BFA] text-[#3F3A75]"
+                  className="flex-1  border-[#A78BFA] text-[#3F3A75]"
                   onClick={() => project.site && window.open(project.site, "_blank")}
                   disabled={!project.site}
                 >
