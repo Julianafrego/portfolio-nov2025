@@ -44,7 +44,9 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 text-left">
             <div className="p-4 glass rounded-xl border-soft">
               <div className="text-sm font-semibold text-[#6D5DD8]">Idade</div>
-              <div className="text-[#5F5577]">21</div>
+              <div className="text-[#5F5577]">
+                {new Date().getFullYear() - new Date('2004-11-28').getFullYear()} anos
+              </div>
             </div>
 
             <div className="p-4 glass rounded-xl border-soft">
