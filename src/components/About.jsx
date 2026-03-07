@@ -51,7 +51,7 @@ const About = () => {
 
             <div className="p-4 glass rounded-xl border-soft">
               <div className="text-sm font-semibold text-[#6D5DD8]">Idiomas</div>
-              <div className="text-[#5F5577]">pt-BR • EN • ES</div>
+              <div className="text-[#5F5577]">pt-BR (Nativo) • EN (intermediário) • ES (Básico)</div>
             </div>
 
             <div className="p-4 glass rounded-xl border-soft">
