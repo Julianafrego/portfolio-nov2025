@@ -74,7 +74,7 @@ const Projects = () => {
         "Aplicativo mobile do jogo da velha com armazenamento local do histórico das partidas. Além da lógica do jogo, implementei persistência em banco local para registrar resultados anteriores, vencedor de cada partida e posições finais associadas às vitórias.",
       image: iniciojogodosvelhos,
       images: [iniciojogodosvelhos, historicojogodosvelhos, historico2jogodosvelhos, configjogodosvelhos],
-      github: "https://github.com/Julianafrego/jogo_da_velha_flutter",
+      github: "https://github.com/Julianafrego/jogo_dos_velhos",
       tags: ["Flutter", "Dart", "Local Storage"],
     },
     {
