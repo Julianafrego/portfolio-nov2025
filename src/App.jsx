@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import About from './components/About';
 import Technologies from './components/Technologies';
-import Projects from './components/Projects';
+import Projects from './components/projects/Projects';
 import Footer from './components/footer';
 import './App.css';
 
