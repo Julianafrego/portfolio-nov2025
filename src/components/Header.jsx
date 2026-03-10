@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button.jsx';
 
 const Header = () => {
   return (
-    <header className="relative min-h-[80vh] bg-aurora overflow-hidden">
+    <header className="relative min-h-[90vh] bg-aurora overflow-hidden">
       <SoftAurora />
       <nav className="relative z-20 container mx-auto px-6 py-6 flex items-center justify-between">
         <div className="text-2xl font-bold text-[#3F3A75]">Juliana Freire</div>
@@ -30,7 +30,7 @@ const Header = () => {
 
           <div className="flex gap-4 flex-wrap">
             <Button
-              className="bg-[#A78BFA] hover:bg-[#7C3AED] text-white px-6 py-3 rounded-full"
+              className="bg-[#A78BFA] hover:bg-[#7C3AED] text-white px-12 py-4 font-bold text-lg rounded-full"
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Ver Projetos
@@ -38,7 +38,7 @@ const Header = () => {
 
             <Button
               variant="outline"
-              className="border-soft text-[#3F3A75] px-6 py-3 rounded-full"
+              className="border-soft text-[#3F3A75] px-12 py-4 font-bold text-lg rounded-full"
               onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Sobre mim
