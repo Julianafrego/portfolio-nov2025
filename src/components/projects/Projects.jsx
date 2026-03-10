@@ -75,7 +75,7 @@ const Projects = () => {
       image: iniciojogodosvelhos,
       images: [iniciojogodosvelhos, historicojogodosvelhos, historico2jogodosvelhos, configjogodosvelhos],
       github: "https://github.com/Julianafrego/jogo_dos_velhos",
-      tags: ["Flutter", "Dart", "Local Storage"],
+      tags: ["Flutter", "Dart", "Local Storage", 'mobile game'],
     },
     {
       id: 4,
@@ -85,7 +85,7 @@ const Projects = () => {
       image: xitoque,
       images: [xitoque],
       github: "https://github.com/Julianafrego/xitoque_app",
-      tags: ["Flutter", "Dart"],
+      tags: ["Flutter", "Dart", 'music', 'mobile game'],
     },
     {
       id: 2,
