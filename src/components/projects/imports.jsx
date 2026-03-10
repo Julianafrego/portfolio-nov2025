@@ -2,8 +2,12 @@ import intelectoquiz from '../../assets/intelectoquiz.png';
 import voley from '../../assets/volley.png';
 import imc from '../../assets/imc.jpg';
 import xitoque from '../../assets/xitoque.png';
-import velha from '../../assets/velha.jpg';
 import les from '../../assets/les.png';
+
+import iniciojogodosvelhos from '../../assets/jogodosvelhos/inicio_jogodosvelhos.png';
+import historicojogodosvelhos from '../../assets/jogodosvelhos/historico_jogodosvelhos.png';
+import historico2jogodosvelhos from '../../assets/jogodosvelhos/historico2_jogodosvelhos.png';
+import configjogodosvelhos from '../../assets/jogodosvelhos/config_jogodosvelhos.png';
 
 import bmm from '../../assets/bmmweb/bmm.png';
 import canvas from '../../assets/bmmweb/canvas_bmmweb.png';
@@ -17,7 +21,10 @@ export {
   voley,
   imc,
   xitoque,
-  velha,
+  iniciojogodosvelhos,
+  historicojogodosvelhos,
+  historico2jogodosvelhos,
+  configjogodosvelhos,
   les,
   bmm,
   canvas,
