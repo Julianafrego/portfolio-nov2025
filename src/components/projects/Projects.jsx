@@ -115,7 +115,7 @@ const Projects = () => {
           Meus Projetos
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+         <div className="grid grid-cols-1 min-[768px]:grid-cols-2 gap-8">
           {projects.map((project) => (
             <motion.div
               key={project.id}
