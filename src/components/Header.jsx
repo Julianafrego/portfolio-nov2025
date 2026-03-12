@@ -8,7 +8,6 @@ const Header = () => {
     <header className="relative min-h-[90vh] bg-aurora overflow-hidden">
       <SoftAurora />
       <nav className="relative z-20 container mx-auto px-6 py-6 flex items-center justify-between">
-        <div className="text-2xl font-bold text-[#3F3A75]">Juliana Freire</div>
       </nav>
 
       <div className="container mx-auto mt-30 px-6 relative z-20 flex flex-col lg:flex-row items-center gap-10 py-12">
