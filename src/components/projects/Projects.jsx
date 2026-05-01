@@ -50,6 +50,7 @@ const Projects = () => {
       image: iniciofolhalida,
       images: [  iniciofolhalida,bibliotecafolhalida, livrofolhalida, estantefolhalida, dashboardfolhalida],
       site: "https://folha-lida.vercel.app/",
+      github: "https://github.com/Julianafrego/folha_lida",
       tags: ["React", "Next.js", "local storage"],
     },
     {
