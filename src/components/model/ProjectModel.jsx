@@ -113,29 +113,31 @@ const ProjectModal = ({ project, onClose }) => {
                   </span>
                 ))}
               </div>
-
-              {project.github && (
-                <a
-                href={project.github}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#6D5DD8] text-white font-medium hover:opacity-90"
-                >
-                <Github size={18} />
-                Ver projeto
-                </a>                
-              )}
-              {project.site && (
-                <a
-                  href={project.site}
+               
+               <div className='flex gap-3'>
+                {project.github && (
+                  <a
+                  href={project.github}
                   target="_blank"
                   rel="noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#6D5DD8] text-white font-medium hover:opacity-90"
-                >
-                  <Globe size={18} />
-                  Ver site
-                </a>
-              )}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#6D5DD8] text-white font-medium hover:opacity-90"
+                  >
+                  <Github size={18} />
+                  Acessar Github
+                  </a>                
+                )}
+                {project.site && (
+                  <a
+                    href={project.site}
+                    target="_blank"
+                    rel="noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#6D5DD8] text-white font-medium hover:opacity-90"
+                  >
+                    <Globe size={18} />
+                    Acessar site
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         </motion.div>
