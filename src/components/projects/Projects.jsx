@@ -18,6 +18,11 @@ import {
   documentacao,
   map,
   cafeconcentrado,
+  bibliotecafolhalida,
+  dashboardfolhalida,
+  estantefolhalida,
+  iniciofolhalida,
+  livrofolhalida
 } from '../projects/imports.jsx';
 
 import ProjectModal from '../model/ProjectModel.jsx';
@@ -28,7 +33,7 @@ const Projects = () => {
 
   const projects = [
     {
-      id: 8,
+      id: 9,
       title: "BMMWEB",
       description:
         "Plataforma web voltada à criação e comparação de modelos de negócios, desenvolvida para tornar o processo de modelagem mais intuitivo e estruturado. Atuo há mais de um ano na continuidade e evolução do sistema, com participação full stack em frontend, backend, integrações, modelagem de banco de dados, criação de CRUDs, desenvolvimento de novas telas e deploy da aplicação.",
@@ -36,6 +41,16 @@ const Projects = () => {
       images: [bmm, canvas, documentacao, map],
       site: "https://bmm.prp.uespi.br/",
       tags: ["React", "Node.js", "FastApi", "PostgreSQL", "Docker", "Figma"],
+    },
+        {
+      id: 8,
+      title: "Folha Lida",
+      description:
+            "A ferramenta oferece uma solução completa para organização de leituras, permitindo o cadastro de livros com status de leitura e o registro de anotações ao longo do progresso. Conta com a criação de estantes personalizadas em dois modos: automático, baseado em regras como gênero e status, e manual, com seleção direta de livros.  Inclui sistema de autenticação persistido no navegador via local storage, além de recursos como filtragem dinâmica de livros e um dashboard com estatísticas de leitura, proporcionando uma visão geral do progresso e hábitos do usuário.",
+      image: iniciofolhalida,
+      images: [  iniciofolhalida,bibliotecafolhalida, livrofolhalida, estantefolhalida, dashboardfolhalida],
+      site: "https://folha-lida.vercel.app/",
+      tags: ["React", "Next.js", "local storage"],
     },
     {
       id: 7,

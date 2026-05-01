@@ -16,6 +16,11 @@ import map from '../../assets/bmmweb/map_bmmweb.png';
 
 import cafeconcentrado from '../../assets/cafeconcentrado.jpeg';
 
+import bibliotecafolhalida from '../../assets/folhalida/Biblioteca.png';
+import dashboardfolhalida from '../../assets/folhalida/dashboard.png';
+import estantefolhalida from '../../assets/folhalida/estante.png';
+import iniciofolhalida from '../../assets/folhalida/inicio.png';
+import livrofolhalida from '../../assets/folhalida/livro.png';
 export {
   intelectoquiz,
   voley,
@@ -31,4 +36,9 @@ export {
   documentacao,
   map,
   cafeconcentrado,
+  bibliotecafolhalida,
+  dashboardfolhalida,
+  estantefolhalida,
+  iniciofolhalida,
+  livrofolhalida
 };
